@@ -9,23 +9,23 @@ git --version // ser på hvilken version af git man har instaleret
 ////
 ////////////////////////////////////////
 
-git init // Opretter reposertory inde i filmappen som man er inde i (fordi man ikke har defineret andet)
+git init  // Opretter reposertory inde i filmappen 
 
-git init (projektnavn) // Opretter mappe med reposertory
+git init projektnavn // Opretter mappe med reposertory 
 
-ls // Laver liste over filer der er i mappen
+ls // Laver liste over filer der er i mappen 
 
 cd // vælger du filmappe 
 
-ls -a // der kan du se liste plus skjulte filer
+ls -a // der kan du se liste plus skjulte filer 
 
 mkdir // laver en mappe
 
 cd ~ går tilbage til roden
 
-cd.. går en mappe tilbage
+cd ../ // går tilbage
 
-touch // gør at du kan oprette filer 
+touch // gør at du kan oprette filler 
 
 clear // ryder skærmen 
 
@@ -69,7 +69,9 @@ git config --global email "Yor Email"   // skal oprette email
 
 Step:
 1:
-git add // tilføjer filen til din reposertory ( staging area )
+git add // tilføjer filen til din reposertory ( staging area ) // add skal kun bruges når dne ikke eksistere dvs hvis den eksistere skal du kun commite
+
+git add . // tilføjer alle filer til staging 
 2:
 git commit // Gemmer filen i reposertory
 
@@ -77,12 +79,11 @@ git commit // Gemmer filen i reposertory
 
 git reset HEAD (filnavn) // fjerner fil fra stage og sætter den tilbage til untracked
 
-git commit -a // commiter alle filer der kan findes i staging 
+git commit -a // (comiter) gemmer alle filer der kan findes 
 
-git commit -a -m " gemme besked" // commiter alle filer der kan findes med en besked
+git commit -a -m " (comiter) gemme besked" // gemmer alle filer der kan findes med en besked 
 
-git commit // comitter og giver mulighed for besked direkte i editor 
-
+git comit // åbner notepad og spørger hvilke besked skal gemmes
 
 git status // hviser den nuværende versions kontrol af vores projekt 
 
@@ -101,7 +102,7 @@ git log // ser en liste over hvad der er commitet
 ctrl + c // går ud af view-mode og tilbage til cammand line  
 
 
-git checkout (2jkn3 commit code) // Udskifter branch 
+git checkout 2jkn3 (commit code) // Udskifter branch 
 
 cat // læser filen i command prompt og udskriver den direkte 
 
@@ -122,27 +123,34 @@ git diff 2jkn3 34kmf // hviser hvad forskelen er på to filer
 ////////////////////////////////////////
 
 
-git branch // laver en ny branch 
+git bracnh // laver en ny branch 
 
-git checkout (branchnavn) // skifter branch
+git chechkout (branchnavn) // skifter branch
 
 git checkout -b (branchnavn) // opretter en branch samtidig med at man går ind i den branch 
 
-git branchtouch // indekere hvilken branch du er i samtidig med at du får en liste af branch
+git bracnh // indekere hvilken branch du er i samtidig med at du får en liste af branch
 
-git branch -D // Sletter branch
+git bracnh -D // Sletter branch
 
 git merge (branch) // overskriver pågælende branch med ny branch
 
 
+////////////////////////////////////////
+////
+////	Clone 
+////
+////////////////////////////////////////
 
 
+git clone ("LINK")// kopier filer fra github ned i din projekt mappe
+git clone ("LINK") (mappenavn) // kopier filer fra github med et valgt mappenavn
+
+git remote // ser på hvor projetet stammer fra (står der origin stammer den fra en orginal mappe står der ingenting er det orginalen)
+git remote add (navn) // ændre navnet på originalen 
+
+git remote add (clone name) ~/C:\wamp\www\1_a_git\ (clone folder) // 
 
 
-
-
-
-
-
-
-
+git push (origin) (branchname) // smider ændringer i den originale fra branchen som man diffinere 
+git pull (origin) (branchname) // 
