@@ -1,1 +1,0 @@
-This is the frontend section... this is only for the users
