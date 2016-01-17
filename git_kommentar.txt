@@ -29,6 +29,7 @@ touch // gør at du kan oprette filler
 
 clear // ryder skærmen 
 
+
 mv (Gammel navn) (Ny navn) // Ændre navn på mappe (skal være ude af mappen for at ændre)
 
 rm -r mappe/.git // sletter mappn (unsøg hvad -r gør)
@@ -123,15 +124,15 @@ git diff 2jkn3 34kmf // hviser hvad forskelen er på to filer
 ////////////////////////////////////////
 
 
-git bracnh // laver en ny branch 
+git branch // laver en ny branch 
 
-git chechkout (branchnavn) // skifter branch
+git checkout (branchnavn) // skifter branch
 
 git checkout -b (branchnavn) // opretter en branch samtidig med at man går ind i den branch 
 
-git bracnh // indekere hvilken branch du er i samtidig med at du får en liste af branch
+git branch // indekere hvilken branch du er i samtidig med at du får en liste af branch
 
-git bracnh -D // Sletter branch
+git branch -D (Branch navn)// Sletter branch
 
 git merge (branch) // overskriver pågælende branch med ny branch
 
